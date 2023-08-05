@@ -31,7 +31,7 @@
     
 </head>
 <body>
-    <header>
+    <header >
         <nav>
             <a href="index.html">
             <img src="Imagen/logo.png" /> </a>
@@ -43,7 +43,16 @@
         </button>
         <aside>
             <ul>
+                <li><a href="#contenedor"> Inicio </a></li>
                 <li> <a href="#cartas">Areas</a></li>
+                <li class="has-submenu">
+                    <a href="#somos" id="quienesSomos"> ¿Quiénes somos? </a>
+                    <ul class="submenu" id="submenu">
+                        <li><a href="#persona1">Sabrina Ramos</a></li>
+                        <li><a href="#persona2">Rodrigo</a></li>
+                        <li><a href="#persona3">Daian</a></li>
+                    </ul>
+                </li>
                 <li><a href="#staff">Staff</a></li>
                 <li> <a href="#ubicacion">Ubicacion</a></li>
                 <li> <a href="#footer">Contactos</a></li>
@@ -53,7 +62,7 @@
     </header>
 
 
-        <div class="contenedor" data-aos="fade-down" data-aos-duration="900" >
+        <div class="contenedor" id="contenedor" data-aos="fade-down" data-aos-duration="900" >
                 <img src="Imagen/1.png" alt="vita" >
                 <div class="texto">
                     <p>Salud - Bienestar - Movimiento</p>
@@ -94,6 +103,34 @@
         </div>
     </section>
 
+    
+    <section class="staff" id="somos">
+        <div class="container">
+            <h2> ¿Quienes somos?  </h2>
+            <div class="fila">
+                <div class="user">
+                    <img src="Imagen/user.png" alt="">
+                    <h3> Sabrina Ramos </h3>
+                    <h4> Psicologa</p>
+
+                </div>
+    
+                <div class="user">
+                    <img src="Imagen/user.png" alt="">
+                    <h3> Rodrigo</h3>
+                    <h4> Personal Training</p>
+                    </div>
+
+                <div class="user">
+                    <img src="Imagen/user.png" alt="">
+                    <h3> Daian </h3>
+                    <h4> Kinesiologia</h4>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
     <section class="staff" id="staff">
         <div class="container">
             <h2> Nuestro Staff </h2>
@@ -101,22 +138,13 @@
                 <div class="user">
                     <img src="Imagen/user.png" alt="">
                     <h3> User 1</h3>
-                    <h4> Psicologa</p>
-                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <h4> Yoga </p>
                 </div>
     
                 <div class="user">
                     <img src="Imagen/user.png" alt="">
                     <h3> User 2</h3>
-                    <h4> Personal Training</p>
-                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                </div>
-    
-                <div class="user">
-                    <img src="Imagen/user.png" alt="">
-                    <h3> User 3</h3>
-                    <h4> Kinesiologia</h4>
-                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <h4> Yoga</p>
                 </div>
             </div>
         </div>
