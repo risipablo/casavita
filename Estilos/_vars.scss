@@ -1,0 +1,36 @@
+    /* Titulos H2 */
+
+    @mixin H2a {
+        text-align: center;
+        margin:2rem 0px;
+        font-size: 3.6rem;
+        font-family: 'Lato', sans-serif;
+        color: #084c87;
+        font-style: italic;
+    }
+
+    @mixin H2b {
+        text-align: center;
+        margin:4rem 0px;
+        font-size: 3.6rem;
+        font-family: 'Lato', sans-serif;
+        color: #fff;
+        font-style: italic;
+    }
+
+    @mixin staff {
+            cursor: pointer;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            letter-spacing: 2px;
+    }
+
+    @mixin imagen {
+           
+            transition: all .7s;
+            margin: auto;
+            border-radius: 100%;
+            max-width: 400px;
+    }
+    
