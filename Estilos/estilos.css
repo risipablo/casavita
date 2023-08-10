@@ -305,14 +305,6 @@ header {
   top: 0;
   width: 100%;
 }
-header .light-mode {
-  background-color: white;
-  color: black;
-}
-header .dark-mode {
-  background-color: black;
-  color: white;
-}
 
 /* Imagen Casa Vita 
 
