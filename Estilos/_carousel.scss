@@ -2,23 +2,10 @@
     display: flex;
     align-items: center;
     gap: 50px;
-    padding: 40px 0px;
-    min-height: 42vh;
+    padding: 40px 20px;
+    min-height: 40vh;
     margin: 0 auto;
     
-    a {
-        display: inline-block;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #717171;
-        font-weight: 500;
-        background: #fff;
-        border-radius: 3.125rem;
-        margin: 0 auto;
-        padding: 6px 26px;
-        font-size: 2rem;
-        transition: 0.3s ease-in-out;
-    }
 
     .swiper {
         width: 100%;
@@ -34,21 +21,16 @@
     }
 
     .swiper-slide {
-        height: 820px;
+        height: 620px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: end;
         align-items: center;
         padding: 0 0 80px;
-        filter: grayscale(0.4);
     }
     
-    
-    
-    .swiper-slide a:hover {
-        color: #005baa;
-    }
+
     
     .swiper-slide div {
         transition: 0.25s;
@@ -60,18 +42,23 @@
     }
     
     .swiper-slide--one {
-        background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-        url("../Imagen/1.png") no-repeat 50% 50% / cover;
-    }
-    
-    .swiper-slide--two {
-        background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+        background: 
         url("../Imagen/consultorio.jpg") no-repeat 50% 50% / cover;
     }
     
+    .swiper-slide--two {
+        background:
+        url("../Imagen/2.jpg") no-repeat 50% 50% / cover;
+    }
+    
     .swiper-slide--three {
-        background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+        background: 
         url("../Imagen/gym.jpg") no-repeat 50% 50% / cover;
+    }
+
+    .swiper-slide--four {
+        background: 
+        url("../Imagen/vita.png") no-repeat 50% 50% / cover;
     }
         
     .swiper-3d .swiper-slide-shadow-left,
@@ -79,14 +66,5 @@
         background-image: none;
     }
     
-    .texto {
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: 2rem;
-        position: absolute;
-        bottom: 7%;
-        left: 50%;
-        text-align: center;
-        transform: translateX(-50%);
-        color: rgb(228, 196, 12);
-    }
+    
 }

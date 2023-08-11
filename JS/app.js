@@ -5,7 +5,7 @@
         effect: "coverflow",
         grabCursor: true,
         centeredSlides: true,
-        slidesPerView: 1,
+        slidesPerView: 2,
         speed: 900,
         coverflowEffect: {
         rotate: 0,
