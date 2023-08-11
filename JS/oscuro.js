@@ -1,8 +1,10 @@
 
-const Oscuro = document.getElementById ("boton");
-const nav = document.querySelector(".nav");
 
-Oscuro.addEventListener ( "click" , () => {
-    container.classList.toggle("dark-mode");
-    container.classList.toggle("light-mode");
-})
+const BtnOscuro = document.querySelectorAll("#oscuro");
+
+BtnOscuro.forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+        btn.classList.toggle('active');
+    });
+});

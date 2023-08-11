@@ -5,8 +5,13 @@
 .perfil {
   background-color: rgb(232, 241, 248);
   max-width: 1200px;
-  padding: 80px 0px;
+  padding: 86px 0px;
   font-family: "Montserrat", sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+body.dark .perfil {
+  color: rgb(88, 166, 255);
+  background-color: #161b22;
 }
 .perfil .usuario {
   display: flex;
@@ -14,31 +19,37 @@
   flex-direction: column;
   align-items: center;
   margin: auto;
-  height: 55vh;
 }
 .perfil .usuario img {
   border-radius: 100%;
   margin: auto;
   max-width: 600px;
+  margin: 4.6rem 0px 2.5rem 0px;
+}
+body.dark .perfil .usuario img {
+  border: 3px solid #fff;
 }
 .perfil .usuario h2 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: 600;
-  padding: 20px;
+  padding: 10px;
 }
 .perfil .usuario h3 {
-  font-size: 2.6rem;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 .perfil .texto {
   display: block;
-  margin: 2rem 0px 0px;
   padding: 30px 40px;
 }
 .perfil .texto p {
   margin: 50px;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   color: black;
-  font-weight: 600;
+  font-weight: 300;
+}
+body.dark .perfil .texto p {
+  color: #fff;
 }
 
 /* NAVEGADOR */
@@ -60,10 +71,60 @@ nav {
   backface-visibility: hidden;
   transform: translateZ(0px);
   transition: 0.7s;
+  /* modo oscuro */
+}
+body.dark nav {
+  background-color: #010409;
+  box-shadow: #c1c1c2;
 }
 nav img {
   height: 140px;
   max-width: 100%;
+}
+nav .oscuro {
+  cursor: pointer;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  border-radius: 1000px;
+  background-color: none;
+  border: 2px solid #c1c1c2;
+  box-shadow: #c1c1c2;
+  outline: none;
+  width: 120px;
+}
+nav .oscuro::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 45px;
+  position: absolute;
+  background: #f9f9f9;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: 0.3s;
+}
+nav .oscuro.active {
+  color: rgba(0, 0, 0, 0);
+}
+nav .oscuro.active::after {
+  right: 0;
+  left: unset;
+}
+nav .oscuro span {
+  width: 66px;
+  height: 45px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #f9f9f9;
+}
+nav .oscuro span i {
+  justify-content: space-between;
+  font-size: 2.2rem;
+  padding: 3px 14px;
 }
 
 .burger {
@@ -136,6 +197,9 @@ aside {
   translate: 100% 0;
   transition: 0.3s;
 }
+body.dark aside {
+  background-color: #03070e;
+}
 
 aside ul {
   list-style: none;
@@ -167,6 +231,10 @@ aside li {
   background-color: #272e3c;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  transition: 0.6s;
+}
+body.dark #submenu {
+  background-color: #040911;
 }
 
 #submenu.active {
@@ -178,7 +246,6 @@ aside li {
 }
 
 .has-submenu > ul {
-  transition: 0.3s;
   display: none;
   position: absolute;
   top: 100%;
@@ -285,6 +352,14 @@ a:hover {
   color: rgb(228, 196, 12);
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -296,6 +371,9 @@ body {
   scroll-behavior: smooth;
   width: 100%;
   transition: background-color 0.3s, color 0.3s;
+}
+body.dark {
+  background-color: #161b22;
 }
 
 header {
@@ -357,6 +435,9 @@ header {
   color: #084c87;
   font-weight: 800;
 }
+body.dark .cartas h2 {
+  color: rgb(88, 166, 255);
+}
 .cartas .container {
   display: flex;
   justify-content: center;
@@ -364,6 +445,9 @@ header {
   flex-direction: column;
   padding: 20px;
   gap: 20px;
+}
+body.dark .cartas .container {
+  box-shadow: #c1c1c2;
 }
 .cartas .container .card {
   width: 100%;
@@ -400,6 +484,10 @@ header {
   color: #084c87;
   font-weight: 800;
 }
+body.dark .somos h2 {
+  color: rgb(88, 166, 255);
+  background-color: #161b22;
+}
 .somos .container {
   cursor: pointer;
   display: flex;
@@ -423,6 +511,9 @@ header {
   max-width: 400px;
   border: 4px solid rgb(0, 0, 0);
 }
+body.dark .somos .container .fila img {
+  border: 4px solid rgb(212, 212, 212);
+}
 .somos .container .fila img:hover {
   transform: scale(1.1);
   border-color: #e94c4c;
@@ -433,8 +524,14 @@ header {
   padding: 1.6rem;
   font-size: 2.7rem;
 }
+body.dark .somos .container .fila h3 {
+  color: #f3ebeb;
+}
 .somos .container .fila h4 {
   font-size: 2.4rem;
+}
+body.dark .somos .container .fila h4 {
+  color: #f3ebeb;
 }
 
 /* Staff */
@@ -444,6 +541,10 @@ header {
   background-color: rgb(8, 36, 68);
   color: #fff;
 }
+body.dark .staff {
+  color: rgb(88, 166, 255);
+  background-color: #161b22;
+}
 .staff h2 {
   text-align: center;
   margin: 3rem;
@@ -451,6 +552,9 @@ header {
   font-family: "Lato", sans-serif;
   color: #fff;
   font-weight: 800;
+}
+body.dark .staff h2 {
+  color: rgb(88, 166, 255);
 }
 .staff .container {
   cursor: pointer;
@@ -474,6 +578,9 @@ header {
   border-radius: 100%;
   max-width: 400px;
   border: 4px solid rgb(252, 250, 250);
+}
+body.dark .staff .container .fila img {
+  border: 4px solid rgb(212, 212, 212);
 }
 .staff .container .fila img:hover {
   transform: scale(1.1);
@@ -501,6 +608,9 @@ header {
   color: #084c87;
   font-weight: 800;
 }
+body.dark .ubicacion h2 {
+  color: rgb(88, 166, 255);
+}
 .ubicacion .contenedor {
   justify-content: center;
   flex-direction: column;
@@ -510,16 +620,24 @@ footer {
   padding: 90px 0px;
   background-color: rgb(8, 36, 68);
   display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+body.dark footer {
+  color: rgb(88, 166, 255);
+  background-color: #161b22;
+  border-top: 1px solid #fff;
 }
 
 .contacto a {
   padding: 8px;
   color: #fff;
   font-size: 2.1rem;
+}
+body.dark .contacto a {
+  color: rgb(88, 166, 255);
 }
 .contacto a:hover {
   transition: 0.6s;
@@ -535,8 +653,10 @@ footer {
   color: #fff;
   height: 30px;
   margin: 0px 0px 20px 0px;
-  line-height: 10px;
   font-size: 2.1em;
+}
+body.dark .contacto i {
+  color: rgb(88, 166, 255);
 }
 
 .grupo-2 {
@@ -544,11 +664,19 @@ footer {
   text-align: center;
   border-top: 2px solid #000;
 }
+body.dark .grupo-2 {
+  color: rgb(88, 166, 255);
+  background-color: #161b22;
+  border-top: 1px solid #fff;
+}
 .grupo-2 .final {
   color: #fff;
   font-size: 2.1rem;
   font-weight: 800;
   margin: 30px 0px 20px;
+}
+body.dark .grupo-2 .final {
+  color: rgb(88, 166, 255);
 }
 
 .btn-wsp {
