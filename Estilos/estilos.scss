@@ -9,7 +9,25 @@
     @import '_carousel';
     /* INDEX*/
     @import '_index';
+    /* FOOTER */
+    @import '_footer';
 
-
+    *{ 
+        box-sizing: border-box; 
+        padding: 0px;
+        margin:0px;
+    }
+    
+    
+    body{
+        height: 100vh;
+        scroll-behavior:smooth;
+        width: 100%;
+        transition: background-color 0.3s, color 0.3s;
+        &.dark{
+            background-color: $dark;
+        }
+    }
+    
 
 

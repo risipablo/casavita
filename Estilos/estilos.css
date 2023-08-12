@@ -3,8 +3,8 @@
 /* Titulos H2 */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:ital@1&display=swap");
 .perfil {
+  padding: 100px 0px;
   background-color: rgb(232, 241, 248);
-  padding: 86px 0px;
   font-family: "Montserrat", sans-serif;
   transition: background-color 0.3s, color 0.3s;
 }
@@ -29,22 +29,32 @@ body.dark .perfil .usuario img {
   border: 3px solid #fff;
 }
 .perfil .usuario h2 {
-  font-size: 2.3rem;
-  padding: 10px;
+  font-size: 2.6rem;
+  padding: 15px;
   font-weight: 700;
 }
 .perfil .usuario h3 {
-  font-size: 2.2rem;
+  font-size: 2.6rem;
+  padding: 6px 0px 0px;
 }
-.perfil .texto {
-  color: black;
-  padding: 30px 40px;
+
+.texto {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  background-color: rgb(232, 241, 248);
+  padding: 20px 40px 50px;
+  transition: background-color 0.3s, color 0.3s;
 }
-.perfil .texto p {
-  margin: 50px;
+body.dark .texto {
+  background-color: #161b22;
+}
+.texto ul li {
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  margin: 30px;
   font-size: 20px;
 }
-body.dark .perfil .texto {
+body.dark .texto ul li {
   color: #fff;
 }
 
@@ -339,22 +349,6 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
-}
-
-body {
-  height: 100vh;
-  scroll-behavior: smooth;
-  width: 100%;
-  transition: background-color 0.3s, color 0.3s;
-}
-body.dark {
-  background-color: #161b22;
-}
-
 header {
   background-color: rgb(8, 36, 68);
   position: fixed;
@@ -368,10 +362,10 @@ header {
   position: relative;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0px;
+  padding: 20px 0px;
 }
 .contenedor img {
-  min-height: 100%;
+  height: 42vh;
   width: 100%;
 }
 .contenedor .texto {
@@ -610,6 +604,7 @@ body.dark .ubicacion h2 {
   flex-direction: column;
 }
 
+/* FOOTER */
 footer {
   padding: 90px 0px;
   background-color: rgb(8, 36, 68);
@@ -702,4 +697,20 @@ body.dark .btn-wsp i {
   transition: 0.9s;
   background-color: rgb(255, 255, 255);
   color: #0dc310;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  height: 100vh;
+  scroll-behavior: smooth;
+  width: 100%;
+  transition: background-color 0.3s, color 0.3s;
+}
+body.dark {
+  background-color: #161b22;
 }/*# sourceMappingURL=estilos.css.map */
