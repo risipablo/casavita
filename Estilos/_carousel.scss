@@ -3,7 +3,7 @@
     align-items: center;
     gap: 50px;
     padding: 40px 20px;
-    min-height: 40vh;
+    min-height: 48vh;
     margin: 0 auto;
     
 
@@ -13,7 +13,13 @@
     
     .swiper-pagination-bullet,
     .swiper-pagination-bullet-active {
-        background: #fff;
+        background: rgb(8, 36, 68);
+        width: 20px;
+        height: 20px;
+
+        body.dark &{
+            background-color: #fff;
+        }
     }
     
     .swiper-pagination {
@@ -48,7 +54,7 @@
     
     .swiper-slide--two {
         background:
-        url("../Imagen/2.jpg") no-repeat 50% 50% / cover;
+        url("../Imagen/ellos.jpg") no-repeat 50% 50% / cover;
     }
     
     .swiper-slide--three {

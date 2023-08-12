@@ -3,7 +3,7 @@
 
 .perfil{
     background-color: rgb(232, 241, 248);
-    max-width: 1200px;
+    
     padding: 86px 0px;
     font-family: 'Montserrat', sans-serif;
     transition: background-color 0.3s, color 0.3s;
@@ -33,28 +33,25 @@
             }
         }
         h2{
-            font-size: 2rem;
-            font-weight: 600;
-            padding: 10px;
+            @include h2Perfil;
         }
         h3{
-            font-size: 2rem;
-            font-weight: 600;
+            font-size: 2.2rem;
+            
         }
+        
     }    
     .texto{
-        display: block;
+        color: black;
         padding: 30px 40px;
-
+        
+        
         p{
             margin: 50px;
-            font-size: 1.2rem;
-            color: black;
-            font-weight: 300;
-
+            @include parrafo;
+        }
             body.dark & {
             color: #fff;
             }
-        }
     }
 }

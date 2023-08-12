@@ -42,3 +42,13 @@
             max-width: 400px;
     }
     
+    @mixin h2Perfil{
+            font-size: 2.3rem;
+            padding: 10px;
+            font-weight: 700;
+    }
+
+    @mixin parrafo {
+        font-size: 20px;
+        
+    }
