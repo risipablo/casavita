@@ -1,50 +1,50 @@
 
 
-    $dark:#161b22;
-    $oscuro: #010409;
-    $h2a:rgb(88, 166, 255);
-    $colora: #f3ebeb;
-    
+        $dark:#161b22;
+        $oscuro: #010409;
+        $h2a:rgb(88, 166, 255);
+        $colora: #f3ebeb;
+        
 
 
-   /* Titulos H2 */
+        /* Titulos H2 */
 
-    @mixin H2a {
-        text-align: center;
-        margin:3rem;
-        font-size: 4rem;
-        font-family: 'Lato', sans-serif;
-        color: #084c87;
-        font-weight:800;
-    }
+        @mixin H2a {
+                text-align: center;
+                margin:3rem;
+                font-size: 4rem;
+                font-family: 'Lato', sans-serif;
+                color: #084c87;
+                font-weight:800;
+        }
 
-    @mixin H2b {
-        text-align: center;
-        margin:3rem; 
-        font-size: 4rem;
-        font-family: 'Lato', sans-serif;
-        color: #fff;
-        font-weight: 800;
-    }
+        @mixin H2b {
+                text-align: center;
+                margin:3rem; 
+                font-size: 4rem;
+                font-family: 'Lato', sans-serif;
+                color: #fff;
+                font-weight: 800;
+        }
 
-    @mixin staff {
-            cursor: pointer;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            letter-spacing: 2px;
-    }
+        @mixin staff {
+                cursor: pointer;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                letter-spacing: 2px;
+        }
 
-    @mixin imagen {
-            transition: all .7s;
-            margin: auto;
-            border-radius: 100%;
-            max-width: 400px;
-    }
-    
-    @mixin h2Perfil{
-            font-size: 2.6rem;
-            padding: 15px;
-            font-weight: 700;
-    }
+        @mixin imagen {
+                transition: all .7s;
+                margin: auto;
+                border-radius: 100%;
+                max-width: 400px;
+        }
+        
+        @mixin h2Perfil{
+                font-size: 2.6rem;
+                padding: 15px;
+                font-weight: 700;
+        }
 

@@ -2,6 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:ital@1&display=swap");
 /* Titulos H2 */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:ital@1&display=swap");
+h4 {
+  font-size: 2.6rem;
+  padding: 6px 3px 0px;
+}
+
 .perfil {
   padding: 100px 0px;
   background-color: rgb(232, 241, 248);
@@ -42,7 +47,7 @@ body.dark .perfil .usuario img {
   font-family: "Montserrat", sans-serif;
   display: flex;
   background-color: rgb(232, 241, 248);
-  padding: 20px 40px 50px;
+  padding: 20px 0px 50px;
   transition: background-color 0.3s, color 0.3s;
 }
 body.dark .texto {
@@ -52,9 +57,88 @@ body.dark .texto {
   color: rgb(0, 0, 0);
   font-weight: 300;
   margin: 30px;
-  font-size: 20px;
+  font-size: 27px;
+  line-height: 70px;
 }
 body.dark .texto ul li {
+  color: #fff;
+}
+
+.perfil2 {
+  padding: 100px 0px;
+  background-color: rgb(232, 241, 248);
+  font-family: "Montserrat", sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+body.dark .perfil2 {
+  color: rgb(88, 166, 255);
+  background-color: #161b22;
+}
+.perfil2 .usuario2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.perfil2 .usuario2 img {
+  border-radius: 100%;
+  max-width: 400px;
+  margin: 4.6rem 0px 2.5rem 0px;
+}
+body.dark .perfil2 .usuario2 img {
+  border: 3px solid #fff;
+}
+.perfil2 .usuario2 h2 {
+  font-size: 2.6rem;
+  padding: 15px;
+  font-weight: 700;
+}
+.perfil2 .usuario2 h3 {
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 6px 6px 0px;
+}
+
+.texto2 {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  background-color: rgb(232, 241, 248);
+  padding: 20px 0px 52px;
+  transition: background-color 0.3s, color 0.3s;
+}
+body.dark .texto2 {
+  background-color: #161b22;
+}
+.texto2 ul li {
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  margin: 35px;
+  font-size: 30px;
+  line-height: 70px;
+}
+body.dark .texto2 ul li {
+  color: #fff;
+}
+
+.texto3 {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  background-color: rgb(232, 241, 248);
+  padding: 20px 0px 52px;
+  transition: background-color 0.3s, color 0.3s;
+}
+body.dark .texto3 {
+  background-color: #161b22;
+}
+.texto3 ul li {
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  margin: 35px;
+  font-size: 45px;
+  line-height: 70px;
+}
+body.dark .texto3 ul li {
   color: #fff;
 }
 
@@ -365,10 +449,10 @@ header {
   padding: 20px 0px;
 }
 .contenedor img {
-  height: 42vh;
+  height: 100%;
   width: 100%;
 }
-.contenedor .texto {
+.contenedor .text {
   font-family: "Lato", sans-serif;
   font-size: 2rem;
   font-weight: 400;
@@ -378,6 +462,7 @@ header {
   text-align: center;
   transform: translateX(-50%);
   color: rgb(199, 175, 39);
+  background-color: none;
 }
 
 /* Seccion Turno */
@@ -679,7 +764,7 @@ body.dark .grupo-2 .final {
   color: rgb(255, 255, 255);
   border-radius: 60px;
   text-align: center;
-  font-size: 25px;
+  font-size: 28px;
   box-shadow: 0px 1px 6px rgb(0, 0, 0);
   z-index: 80;
 }

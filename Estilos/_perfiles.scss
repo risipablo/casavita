@@ -3,8 +3,10 @@
     
 
 
-
-
+h4{
+    font-size: 2.6rem;
+    padding: 6px 3px 0px;
+}
 .perfil{
     padding: 100px 0px;
     background-color: rgb(232, 241, 248);
@@ -52,7 +54,7 @@
     font-family: 'Montserrat', sans-serif;
     display: flex;
     background-color: rgb(232, 241, 248);
-    padding: 20px 40px 50px;
+    padding: 20px 0px 50px;
     transition: background-color 0.3s, color 0.3s;
     body.dark & {
         background-color: $dark;
@@ -63,7 +65,8 @@
             color: rgb(0, 0, 0);
             font-weight: 300;
             margin: 30px;
-            font-size: 20px;
+            font-size: 27px;
+            line-height: 70px;
 
             body.dark &{
                 color: #fff;
@@ -73,6 +76,99 @@
     
 }
 
-.perfil2{
 
+
+.perfil2{
+    padding: 100px 0px;
+    background-color: rgb(232, 241, 248);
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+
+    body.dark & {
+        color: $h2a;
+        background-color: $dark;
+    }
+
+
+    .usuario2{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        
+        
+        img{
+            border-radius: 100%;
+            max-width: 400px;
+            margin: 4.6rem 0px 2.5rem 0px;
+            
+
+            body.dark & {
+                border: 3px solid #fff;
+            }
+        }
+        h2{
+            @include h2Perfil;
+        }
+        h3{
+            font-size: 2.4rem;
+            text-align: center;
+            padding: 6px 6px 0px;
+            
+        }
+        
+    }    
+}
+
+.texto2{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    background-color: rgb(232, 241, 248);
+    padding: 20px 0px 52px;
+    transition: background-color 0.3s, color 0.3s;
+    body.dark & {
+        background-color: $dark;
+    }
+
+    ul{
+        li{
+            color: rgb(0, 0, 0);
+            font-weight: 300;
+            margin: 35px;
+            font-size: 30px;
+            line-height: 70px;
+
+            body.dark &{
+                color: #fff;
+            }
+        }
+    }
+    
+}
+
+.texto3{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    background-color: rgb(232, 241, 248);
+    padding: 20px 0px 52px;
+    transition: background-color 0.3s, color 0.3s;
+    body.dark & {
+        background-color: $dark;
+    }
+
+    ul{
+        li{
+            color: rgb(0, 0, 0);
+            font-weight: 300;
+            margin: 35px;
+            font-size: 45px;
+            line-height: 70px;
+
+            body.dark &{
+                color: #fff;
+            }
+        }
+    }
+    
 }
