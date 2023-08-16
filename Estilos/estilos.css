@@ -34,7 +34,7 @@ body.dark .perfil .usuario img {
   border: 3px solid #fff;
 }
 .perfil .usuario h2 {
-  font-size: 2.6rem;
+  font-size: 2.6em;
   padding: 15px;
   font-weight: 700;
 }
@@ -57,7 +57,7 @@ body.dark .texto {
   color: rgb(0, 0, 0);
   font-weight: 300;
   margin: 30px;
-  font-size: 27px;
+  font-size: 28px;
   line-height: 70px;
 }
 body.dark .texto ul li {
@@ -90,7 +90,7 @@ body.dark .perfil2 .usuario2 img {
   border: 3px solid #fff;
 }
 .perfil2 .usuario2 h2 {
-  font-size: 2.6rem;
+  font-size: 2.6em;
   padding: 15px;
   font-weight: 700;
 }
