@@ -6,6 +6,17 @@ a{
     text-decoration: none;
 }
 
+    
+body{
+    height: 100vh;
+    scroll-behavior:smooth;
+    width: 100%;
+    transition: background-color 0.3s, color 0.3s;
+    &.dark{
+        background-color: $dark;
+    }
+}
+
 
 header{
     background-color: rgb(8, 36, 68);
@@ -173,7 +184,7 @@ header{
                 
                 &:hover{
                     transform: scale(1.1);
-                    border-color: #e94c4c;
+                    color: rgb(221, 39, 39);
                 }
             }
 

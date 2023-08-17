@@ -18,16 +18,5 @@
         margin:0px;
     }
     
-    
-    body{
-        height: 100vh;
-        scroll-behavior:smooth;
-        width: 100%;
-        transition: background-color 0.3s, color 0.3s;
-        &.dark{
-            background-color: $dark;
-        }
-    }
-    
 
 

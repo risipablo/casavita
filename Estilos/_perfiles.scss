@@ -3,10 +3,7 @@
     
 
 
-h4{
-    font-size: 2.6rem;
-    padding: 6px 3px 0px;
-}
+
 .perfil{
     padding: 100px 0px;
     background-color: rgb(232, 241, 248);
@@ -131,6 +128,8 @@ h4{
         background-color: $dark;
     }
 
+    
+
     ul{
         li{
             color: rgb(0, 0, 0);
@@ -172,3 +171,38 @@ h4{
     }
     
 }
+
+.texto4{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    background-color: rgb(232, 241, 248);
+    padding: 20px 0px 52px;
+    transition: background-color 0.3s, color 0.3s;
+    body.dark & {
+        background-color: $dark;
+    }
+
+
+    ul{
+        h4{
+            font-size: 20px;
+            margin: 0px 10px 0px 20px;
+            body.dark &{
+                color: #fff;
+            }
+        }
+        li{
+            color: rgb(0, 0, 0);
+            font-weight: 300;
+            margin: 35px;
+            font-size: 20px;
+            line-height: 70px;
+
+            body.dark &{
+                color: #fff;
+            }
+        }
+    }
+    
+}
+

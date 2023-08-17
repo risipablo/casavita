@@ -76,7 +76,7 @@
                 </div>
         </div> 
 
-        <div class="consultas">
+        <div class="consultas"  data-aos="fade-down" data-aos-duration="900">
             <button class="turno" >
                 <a href="https://wa.me//2996551204"> <p> Consultas para turnos </p> </a> 
             </button> 
@@ -226,15 +226,18 @@
 
     <section id="contacto" class="contacto">
         <div class="contenido-seccion">
-        <h2> Contacto </h2>
+        <h2> CONTACTO </h2>
+
             <div class="fila">
-                <form class="col" action="/enviar-consulta" method="POST">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Telefono">
-                    <input type="text" placeholder="Correo electronico">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="consulta"> </textarea>
-                    <button type="submit">Enviar</button>
-                </form>
+            
+                <div class="col">
+                    <input for="idInCe" type="text" placeholder="Correo electronico">
+                    <input for="idInNom"  type="text" placeholder="Tú nombre">
+                    <textarea for="idInMen" name="" id="" cols="30" rows="10" placeholder="mensaje"> </textarea>
+                        <button id="btnEnviar">
+                        Enviar
+                        </button>
+                </div>
             </div>
         </div>
     </section>

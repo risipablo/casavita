@@ -2,11 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:ital@1&display=swap");
 /* Titulos H2 */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:ital@1&display=swap");
-h4 {
-  font-size: 2.6rem;
-  padding: 6px 3px 0px;
-}
-
 .perfil {
   padding: 100px 0px;
   background-color: rgb(232, 241, 248);
@@ -139,6 +134,34 @@ body.dark .texto3 {
   line-height: 70px;
 }
 body.dark .texto3 ul li {
+  color: #fff;
+}
+
+.texto4 {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  background-color: rgb(232, 241, 248);
+  padding: 20px 0px 52px;
+  transition: background-color 0.3s, color 0.3s;
+}
+body.dark .texto4 {
+  background-color: #161b22;
+}
+.texto4 ul h4 {
+  font-size: 20px;
+  margin: 0px 10px 0px 20px;
+}
+body.dark .texto4 ul h4 {
+  color: #fff;
+}
+.texto4 ul li {
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  margin: 35px;
+  font-size: 20px;
+  line-height: 70px;
+}
+body.dark .texto4 ul li {
   color: #fff;
 }
 
@@ -433,6 +456,16 @@ a {
   text-decoration: none;
 }
 
+body {
+  height: 100vh;
+  scroll-behavior: smooth;
+  width: 100%;
+  transition: background-color 0.3s, color 0.3s;
+}
+body.dark {
+  background-color: #161b22;
+}
+
 header {
   background-color: rgb(8, 36, 68);
   position: fixed;
@@ -589,7 +622,7 @@ body.dark .somos .container .fila img {
 }
 .somos .container .fila img:hover {
   transform: scale(1.1);
-  border-color: #e94c4c;
+  color: rgb(221, 39, 39);
 }
 .somos .container .fila h3 {
   color: #0a0a0a;
@@ -788,14 +821,4 @@ body.dark .btn-wsp i {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-}
-
-body {
-  height: 100vh;
-  scroll-behavior: smooth;
-  width: 100%;
-  transition: background-color 0.3s, color 0.3s;
-}
-body.dark {
-  background-color: #161b22;
 }/*# sourceMappingURL=estilos.css.map */
