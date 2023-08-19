@@ -165,9 +165,16 @@ body.dark .texto4 ul li {
   color: #fff;
 }
 
-/* NAVEGADOR */
-/* Navegador */
-nav {
+/* HEADER */
+.contenedor-header {
+  background-color: rgb(8, 36, 68);
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+  /* Navegador */
+}
+.contenedor-header nav {
   position: sticky;
   z-index: 1;
   top: 0;
@@ -186,15 +193,15 @@ nav {
   transition: 0.7s;
   /* modo oscuro */
 }
-body.dark nav {
+body.dark .contenedor-header nav {
   background-color: #010409;
   box-shadow: #c1c1c2;
 }
-nav img {
+.contenedor-header nav img {
   height: 140px;
   max-width: 100%;
 }
-nav .oscuro {
+.contenedor-header nav .oscuro {
   cursor: pointer;
   margin: 0 auto;
   position: relative;
@@ -206,7 +213,7 @@ nav .oscuro {
   outline: none;
   width: 120px;
 }
-nav .oscuro::after {
+.contenedor-header nav .oscuro::after {
   content: "";
   display: block;
   width: 50px;
@@ -219,14 +226,14 @@ nav .oscuro::after {
   border-radius: 100px;
   transition: 0.3s;
 }
-nav .oscuro.active {
+.contenedor-header nav .oscuro.active {
   color: rgba(0, 0, 0, 0);
 }
-nav .oscuro.active::after {
+.contenedor-header nav .oscuro.active::after {
   right: 0;
   left: unset;
 }
-nav .oscuro span {
+.contenedor-header nav .oscuro span {
   width: 66px;
   height: 45px;
   line-height: 30px;
@@ -234,7 +241,7 @@ nav .oscuro span {
   background: none;
   color: #f9f9f9;
 }
-nav .oscuro span i {
+.contenedor-header nav .oscuro span i {
   justify-content: space-between;
   font-size: 2.2rem;
   padding: 3px 14px;
@@ -448,32 +455,6 @@ body.dark .slider .swiper-pagination-bullet-active {
 }
 
 /* INDEX*/
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  height: 100vh;
-  scroll-behavior: smooth;
-  width: 100%;
-  transition: background-color 0.3s, color 0.3s;
-}
-body.dark {
-  background-color: #161b22;
-}
-
-header {
-  background-color: rgb(8, 36, 68);
-  position: fixed;
-  z-index: 99;
-  top: 0;
-  width: 100%;
-}
-
 /* Imagen Casa Vita  */
 .contenedor {
   position: relative;
@@ -533,7 +514,19 @@ header {
   padding: 93px;
   margin-bottom: 6%;
 }
-.cartas h2 {
+.cartas .container {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+body.dark .cartas .container {
+  box-shadow: #c1c1c2;
+}
+.cartas .container h2 {
   text-align: center;
   margin: 3rem;
   font-size: 4rem;
@@ -541,19 +534,8 @@ header {
   color: #084c87;
   font-weight: 800;
 }
-body.dark .cartas h2 {
+body.dark .cartas .container h2 {
   color: rgb(88, 166, 255);
-}
-.cartas .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px;
-  gap: 20px;
-}
-body.dark .cartas .container {
-  box-shadow: #c1c1c2;
 }
 .cartas .container .card {
   width: 100%;
@@ -600,6 +582,7 @@ body.dark .somos h2 {
   flex-wrap: wrap;
   flex-direction: column;
   letter-spacing: 2px;
+  flex-wrap: wrap;
 }
 .somos .container .fila {
   text-align: center;
@@ -727,10 +710,10 @@ footer {
   padding: 90px 0px;
   background-color: rgb(8, 36, 68);
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   text-align: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 body.dark footer {
   color: rgb(88, 166, 255);
@@ -821,4 +804,20 @@ body.dark .btn-wsp i {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
+}
+
+body {
+  height: 100vh;
+  scroll-behavior: smooth;
+  width: 100%;
+  transition: background-color 0.3s, color 0.3s;
+}
+body.dark {
+  background-color: #161b22;
+}
+body ul {
+  list-style: none;
+}
+body a {
+  text-decoration: none;
 }/*# sourceMappingURL=estilos.css.map */

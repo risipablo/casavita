@@ -3,8 +3,8 @@
     @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:ital@1&display=swap');
     @import '_vars';
     @import '_perfiles';
-    /* NAVEGADOR */
-    @import '_menu';
+    /* HEADER */
+    @import '_header';
     /*CAROUSEL */
     @import '_carousel';
     /* INDEX*/
@@ -12,11 +12,32 @@
     /* FOOTER */
     @import '_footer';
 
+
+
+
+
     *{ 
         box-sizing: border-box; 
         padding: 0px;
         margin:0px;
     }
     
-
-
+    body{
+        height: 100vh;
+        scroll-behavior:smooth;
+        width: 100%;
+        transition: background-color 0.3s, color 0.3s;
+        &.dark{
+            background-color: $dark;
+        }
+    
+        ul{ 
+            list-style: none;
+        }
+        
+        a{
+            text-decoration: none;
+        }
+        
+    }
+    

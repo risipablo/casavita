@@ -2,10 +2,10 @@ footer{
     padding: 90px 0px;
     background-color: rgb(8, 36, 68);
     display:flex;
+    flex-wrap: wrap;
     align-items: center;
     text-align: center;
     justify-content: center;
-    flex-wrap: wrap ;
 
     
     body.dark & {
@@ -106,3 +106,5 @@ footer{
             }
     }
 }
+
+
