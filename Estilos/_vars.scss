@@ -1,7 +1,7 @@
 
 
         $dark:#161b22;
-        $oscuro: #010409;
+        $oscuro: #020800;
         $h2a:rgb(88, 166, 255);
         $colora: #f3ebeb;
         
@@ -11,36 +11,26 @@
 
         @mixin H2a {
                 text-align: center;
-                margin:3rem;
-                font-size: 4rem;
+                margin: 50px 0px 20px 0px;
+                font-size: 1.8rem;
                 font-family: 'Lato', sans-serif;
                 color: #084c87;
-                font-weight:800;
+                font-weight: bold;
         }
 
         @mixin H2b {
-                text-align: center;
-                margin:3rem; 
-                font-size: 4rem;
+                ttext-align: center;
+                margin: 50px 0px 20px 0px;
+                font-size: 1.8rem;
                 font-family: 'Lato', sans-serif;
-                color: #fff;
                 font-weight: 800;
+                color: #fff;
+                
         }
 
-        @mixin staff {
-                cursor: pointer;
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: column;
-                letter-spacing: 2px;
-        }
 
-        @mixin imagen {
-                transition: all .7s;
-                margin: auto;
-                border-radius: 100%;
-                max-width: 400px;
-        }
+
+
         
         @mixin h2Perfil{
                 font-size:2.6em;

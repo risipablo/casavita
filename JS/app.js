@@ -6,7 +6,7 @@
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: 2,
-        speed: 900,
+        speed: 800,
         coverflowEffect: {
         rotate: 0,
         stretch: 0,

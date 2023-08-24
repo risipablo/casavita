@@ -1,10 +1,10 @@
 .slider{
     display: flex;
     align-items: center;
-    gap: 50px;
-    padding: 40px 20px;
-    min-height: 48vh;
-    margin: 0 auto;
+    min-height: 80vh;
+    max-width: 100%;
+    gap:50px;
+    padding: 18px 4px;
     
 
     .swiper {
@@ -14,8 +14,8 @@
     .swiper-pagination-bullet,
     .swiper-pagination-bullet-active {
         background: rgb(8, 36, 68);
-        width: 20px;
-        height: 20px;
+        width: 10px;
+        height: 10px;
 
         body.dark &{
             background-color: #fff;
@@ -27,13 +27,12 @@
     }
 
     .swiper-slide {
-        height: 620px;
+        height: 300px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: end;
         align-items: center;
-        padding: 0 0 80px;
     }
     
 
@@ -49,22 +48,32 @@
     
     .swiper-slide--one {
         background: 
-        url("../Imagen/consultorio.jpg") no-repeat 50% 50% / cover;
+        url("../Imagen/ellos.jpg") no-repeat 50% 50% / 110% 100%;
     }
     
     .swiper-slide--two {
         background:
-        url("../Imagen/ellos.jpg") no-repeat 50% 50% / cover;
+        url("../Imagen/consultorio.jpg") no-repeat 50% 50% / 110% 100%;
     }
     
     .swiper-slide--three {
         background: 
-        url("../Imagen/gym.jpg") no-repeat 50% 50% / cover;
+        url("../Imagen/gym.jpg") no-repeat 50% 50% / 110% 100%;
     }
 
     .swiper-slide--four {
         background: 
-        url("../Imagen/vita.png") no-repeat 50% 50% / cover;
+        url("../Imagen/yoga3.jpg") no-repeat 50% 50% / 110% 100%;
+    }
+
+    .swiper-slide--five {
+        background: 
+        url("../Imagen/yoga4.jpg") no-repeat 50% 50% / 110% 100%;
+    }
+
+    .swiper-slide--six {
+        background: 
+        url("../Imagen/vita.png") no-repeat 50% 50% / 110% 100%;
     }
         
     .swiper-3d .swiper-slide-shadow-left,

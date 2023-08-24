@@ -2,12 +2,10 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="Casa Vita" content="width=device-width, initial-scale=1.0">
     <title>Casa Vita</title>
     <link rel="icon"  href="../Imagen/1.png" type="png" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
-    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -25,39 +23,41 @@
     <link rel="stylesheet" type="text/css" href="../Estilos/estilos.css">
 </head>
 <body>
-    <header >
-        <nav>
-            <a href="../index.html">
-            <img src="../Imagen/logo.png" /> </a>
-            <div class="oscuro" id="oscuro">
-                <span> <i class="fa-solid fa-moon"></i> </span>
-                <span> <i class="fa-regular fa-sun"></i> </span>
-            </div>
-        </nav>
-        <div class="overlay"></div>
-        <button class="burger" onclick="toggleMenu()">
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-close"></i>
-        </button>
-        <aside>
-            <ul>
-                <li><a href="../index.html"> Inicio </a></li>
-                <li> <a href="..../index.html">Areas</a></li>
-                <li class="has-submenu">
-                    <a href="../index.html" id="quienesSomos"> ¿Quiénes somos? </a>
-                    <ul class="submenu" id="submenu">
-                        <li><a href="../Pages/Psicologa.html">Sabrina Ramos</a></li>
-                        <li><a href="../Pages/trainer.html">Rodrigo Feijoo</a></li>
-                        <li><a href="../Pages/kine.html">Daian Rodríguez </a></li>
-                    </ul>
-                </li>
-                <li><a href="../index.html">Staff</a></li>
-                <li> <a href="../index.html">Ubicacion</a></li>
-                <li> <a href="../index.html">Contactos</a></li>
-            </ul>
-        </aside>
-            
-    </header>
+
+    <div class="contenedor-header">
+        <header >
+            <nav>
+                <a href="../index.html">
+                <img src="../Imagen/logo.png" /> </a>
+            </nav>
+            <div class="overlay"></div>
+            <button class="burger" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-close"></i>
+            </button>
+            <aside>
+                <ul>
+                    <div class="oscuro" id="oscuro">
+                        <span> <i class="fa-solid fa-moon"></i> </span>
+                        <span> <i class="fa-regular fa-sun"></i> </span>
+                    </div>
+                    <li><a href="#contenedor"> Inicio </a></li>
+                    <li> <a href="#cartas">Areas</a></li>
+                    <li class="has-submenu">
+                        <a href="#somos" id="quienesSomos"> ¿Quiénes somos? </a>
+                        <ul class="submenu" id="submenu">
+                            <li><a href="../Pages/Psicologa.html">Sabrina Ramos</a></li>
+                            <li><a href="../Pages/trainer.html">Rodrigo Feijoo</a></li>
+                            <li><a href="../Pages/kine.html">Daian Rodríguez </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#staff">Staff</a></li>
+                    <li> <a href="#ubicacion">Ubicacion</a></li>
+                    <li> <a href="#footer">Contactos</a></li>
+                </ul>
+            </aside>
+        </header>
+    </div>
 
     <section class="perfil">
         <div class="usuario">
@@ -103,7 +103,7 @@
         
     </footer>
     
-
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
