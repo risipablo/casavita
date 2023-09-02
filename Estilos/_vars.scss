@@ -18,6 +18,15 @@
                 font-weight: bold;
         }
 
+        @mixin h2a {
+                text-align: center;
+                margin: 50px 0px 35px 0px;
+                font-size: 2.2rem;
+                font-family: 'Lato', sans-serif;
+                color: #084c87;
+                font-weight: bold;
+        } /* titulo responsive */
+
         @mixin H2b {
                 ttext-align: center;
                 margin: 50px 0px 20px 0px;
@@ -28,6 +37,15 @@
                 
         }
 
+        @mixin h2b {
+                ttext-align: center;
+                margin: 50px 0px 35px 0px;
+                font-size: 2.2rem;
+                font-family: 'Lato', sans-serif;
+                font-weight: 800;
+                color: #fff;
+                
+        } /* titulo responsive */
 
         
         @mixin h2Perfil{

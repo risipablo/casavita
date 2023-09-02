@@ -39,8 +39,6 @@ body{
         flex-direction: column;
         }
 
-        
-
    /* Navegador */
 
         nav {
@@ -49,7 +47,7 @@ body{
         top: 0;
         width: 100%;
         height: 80px;
-        padding: 20px 8px;
+        padding: 18px 8px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -64,7 +62,7 @@ body{
 
         img {
             height: 100%;
-            width: 120px;
+            width: 100px;
         }
 
     }
@@ -149,6 +147,7 @@ aside ul {
     list-style: none;
     margin: 30px 0px;
     padding: 8px 6px;
+    display: block;
 }
 
 body.open aside {
@@ -162,12 +161,25 @@ aside li {
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     padding: 20px 8px;
+
+    a{
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer;
+        transition: border-bottom ;
+        padding: 24px 0px;
+        }
+        
+        a:hover{
+        
+        color: #d6b007;
+        }
 }
 
 
 
 
-/* submenu estilos */
+/* submenu estilos*/
 
 #submenu {
 display: none;
@@ -213,17 +225,8 @@ display: block;
 padding: 18px 0px;
 
 }
+ 
 
-a{
-text-decoration: none;
-color: #fff;
-cursor: pointer;
-}
-
-a:hover{
-transition: 0.9s;
-color: #d6b007;
-}
 
     /* modo oscuro */
 
@@ -281,35 +284,87 @@ color: #d6b007;
     }
 
 
-@media only screen and (min-width:800px){
+@media only screen and (min-width:1108px){
 
     .contenedor-header{
         nav{
-            height: 100px;
+            height: 90px;
+            flex-direction: row;
 
             img{
                 height: 100px;
-            }
-            .oscuro{
-                display: none;
+                width: 100%;
             }
         }
+    }
 
-        .burger {
-            display: none;
-        }
+    .burger{
+        display: none;
+    }
 
-        aside {
-            position: static;
-            justify-content: center;
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            background: none;
-        }
+
+    aside {
+        position: static;
+        justify-content: center;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: none;
+        z-index: none;
+        height: 0;
         
-    
+    }
+
+    aside ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: -70px 0px 0px ; 
     }
     
+    aside li {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 30px;
+
+        a:hover{
+            color: #d6b007;
+            border-bottom: 3px solid ;
+            }
+    }
+    
+    .oscuro{
+        display: none;
+    }
+
+    #submenu {
+        display: none;
+        position: absolute;
+        top:200%;
+        background: rgb(27 32 44 / 70%);
+        backface-visibility: hidden;
+        z-index: 0;
+        transition: .9s ;
+        }
+        
+        .has-submenu > ul {
+
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            z-index: 0;
+            }
+            
+            .has-submenu ul li {
+                padding: 12px 0px;
+                
+                }
+                
 } 
+
+

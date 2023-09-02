@@ -35,7 +35,6 @@
         align-items: center;
     }
     
-
     
     .swiper-slide div {
         transition: 0.25s;
@@ -68,12 +67,12 @@
 
     .swiper-slide--five {
         background: 
-        url("../Imagen/yoga4.jpg") no-repeat 50% 50% / 110% 100%;
+        url("../Imagen/consul2.jpg") no-repeat 50% 50% / 110% 100%;
     }
 
     .swiper-slide--six {
         background: 
-        url("../Imagen/vita.png") no-repeat 50% 50% / 110% 100%;
+        url("../Imagen/yoga4.jpg") no-repeat 50% 50% / 110% 100%;
     }
         
     .swiper-3d .swiper-slide-shadow-left,
@@ -82,4 +81,21 @@
     }
     
     
+}
+
+@media only screen and (min-width:800px) {
+
+    .slider{
+        min-height: 140vh;
+        max-width: 90vw;
+        margin: 0 auto;
+        padding: 12px 0px;
+        .swiper {
+            width: 100%;
+        }
+        .swiper-slide {
+            height: 500px;
+        }
+    }
+
 }
