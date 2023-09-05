@@ -203,6 +203,9 @@ aside li {
         position: relative;
     }
 
+    .has-menu:hover .submenu {
+    display: block;
+}
 
     .has-menu > ul {
 

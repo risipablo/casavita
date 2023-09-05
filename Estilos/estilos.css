@@ -321,6 +321,10 @@ body.dark .submenu {
   position: relative;
 }
 
+.has-menu:hover .submenu {
+  display: block;
+}
+
 .has-menu > ul {
   display: none;
   position: absolute;
