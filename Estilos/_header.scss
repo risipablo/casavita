@@ -168,65 +168,61 @@ aside li {
         cursor: pointer;
         transition: border-bottom ;
         padding: 24px 0px;
+        transition: all;
         }
         
         a:hover{
-        
         color: #d6b007;
         }
 }
 
 
-
-
 /* submenu estilos*/
+    .submenu{
+        display: none;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        background-color: #272e3c;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        transition: .9s ;
+        
+        body.dark &{
+            background-color: #040911;
+        }
+        
+    }
 
-#submenu {
-display: none;
-position: absolute;
-top: 50%;
-width: 100%;
-background-color: #272e3c;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
-transition: .9s ;
+    .submenu.active{
+        display: block;
+        position: absolute;
+    }
 
-body.dark &{
-    background-color: #040911;
-}
+    .has-menu{
+        position: relative;
+    }
 
 
-}
+    .has-menu > ul {
 
-#submenu.active {
-display: block;
-}
-
-
-.has-submenu {
-position: relative;
-}
-
-.has-submenu > ul {
-
-display: none;
-position: absolute;
-top: 100%;
-left: 0;
-width: 100%;
-z-index: 1;
-}
-
-.has-submenu:hover > ul {
-display: block;
-}
-
-.has-submenu ul li {
-padding: 18px 0px;
-
-}
- 
-
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        }
+        
+        .has-menu:hover > ul {
+        display: block;
+        }
+        
+        .has-menu ul li {
+        padding: 18px 0px;
+        
+        }
+         
 
     /* modo oscuro */
 
@@ -328,11 +324,13 @@ padding: 18px 0px;
     aside li {
         display: flex;
         flex-wrap: wrap;
-        margin: 10px 30px;
+        margin: 10px 22px;
+        
 
         a:hover{
             color: #d6b007;
-            border-bottom: 3px solid ;
+            border-bottom: 2px solid ;
+            transition: all 0.1s;
             }
     }
     
@@ -340,30 +338,7 @@ padding: 18px 0px;
         display: none;
     }
 
-    #submenu {
-        display: none;
-        position: absolute;
-        top:200%;
-        background: rgb(27 32 44 / 70%);
-        backface-visibility: hidden;
-        z-index: 0;
-        transition: .9s ;
-        }
-        
-        .has-submenu > ul {
 
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            z-index: 0;
-            }
-            
-            .has-submenu ul li {
-                padding: 12px 0px;
-                
-                }
                 
 } 
 
