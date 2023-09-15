@@ -1,8 +1,8 @@
 const toggleMenu = () => document.body.classList.toggle("open");
 
 
-// Cerrar el submenu cuando el cursor se aleja
-const submenuToggle = document.querySelector('.submenu-toggle');
+
+const submenuToggle = document.querySelector('.submenu-toggle'); // Se llama a la variale
 
 submenuToggle.addEventListener('click', () => {
     submenuToggle.classList.toggle('active');
