@@ -4,7 +4,7 @@
     min-height: 80vh;
     max-width: 100%;
     gap:40px;
-    padding: 0px 8px;
+    padding: 0px 4px;
     
 
     .swiper {
@@ -47,32 +47,32 @@
     
     .swiper-slide--one {
         background: 
-        url("../Imagen/ellos.jpg") no-repeat 50% 50% / 110% 100%;
+        url("../Imagen/ellos.jpg") no-repeat 50% 50% / 120% 100%;
     }
     
     .swiper-slide--two {
         background:
-        url("../Imagen/consultorio.jpg") no-repeat 50% 50% / 110% 100%;
+        url("../Imagen/consultorio.jpg") no-repeat 50% 50% / 120% 100%;
     }
     
     .swiper-slide--three {
         background: 
-        url("../Imagen/gym.jpg") no-repeat 50% 50% / 110% 100%;
+        url("../Imagen/gym.jpg") no-repeat 50% 50% / 120% 100%;
     }
 
     .swiper-slide--four {
         background: 
-        url("../Imagen/yoga3.jpg") no-repeat 50% 50% / 110% 100%;
+        url("../Imagen/yoga3.jpg") no-repeat 50% 50% / 120% 100%;
     }
 
     .swiper-slide--five {
         background: 
-        url("../Imagen/consul2.jpg") no-repeat 50% 50% / 110% 100%;
+        url("../Imagen/consul2.jpg") no-repeat 50% 50% / 120% 100%;
     }
 
     .swiper-slide--six {
         background: 
-        url("../Imagen/yoga4.jpg") no-repeat 50% 50% / 110% 100%;
+        url("../Imagen/yoga4.jpg") no-repeat 50% 50% / 120% 100%;
     }
         
     .swiper-3d .swiper-slide-shadow-left,
@@ -86,15 +86,15 @@
 @media only screen and (min-width:800px) {
 
     .slider{
-        min-height: 140vh;
+        min-height: 180vh;
         max-width: 90vw;
         margin: 0 auto;
-        padding: 12px 0px;
+        padding: 12px;
         .swiper {
             width: 100%;
         }
         .swiper-slide {
-            height: 500px;
+            height: 600px;
         }
     }
 

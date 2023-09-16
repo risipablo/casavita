@@ -31,10 +31,11 @@
         }
         h2{
             @include h2Perfil;
+            margin: 8px 0px;
         }
         h3{
             font-size: 18px;
-            padding: 6px 0px 0px;
+            margin: 6px 0px 0px;
             
         }
         
@@ -94,11 +95,12 @@
         }
         h2{
             @include h2Perfil;
+            margin: 8px 0px;
         }
         h3{
             display: block;
             font-size: 18px;
-            padding: 6px 8px 0px;
+            margin: 6px 8px 0px;
             
         }
         
