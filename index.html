@@ -57,7 +57,7 @@
                     </li>
                     <li><a href="#staff">Equipo</a></li>
                     <li> <a href="#ubicacion">Ubicacion</a></li>
-                    <li> <a href="#footer">Contactos</a></li>
+                    <li> <a href="#formulario">Contactos</a></li>
                 </ul>
             </aside>
         </header>
@@ -174,7 +174,7 @@
                 <div class="user" data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-duration="500">
-                    <a href="#"> <img src="./Imagen/eq3.jpg"  alt="yoga2"></a>
+                    <a href="./Pages/pisco1.html"> <img src="./Imagen/eq3.jpg"  alt="yoga2"></a>
                     <h3> Lucia Cerrutti</h3>
                     <h4> Psicóloga </h4>
                 </div>
@@ -182,7 +182,7 @@
                 <div class="user" data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-duration="500">
-                    <a href="#"> <img src="./Imagen/eqp2.jpg"  alt="yoga2"></a>
+                    <a href="./Pages/pisco2.html"> <img src="./Imagen/eqp2.jpg"  alt="yoga2"></a>
                     <h3> Gabriela Gonzalez</h3>
                     <h4> Psicóloga </h4>
                 </div>
@@ -190,7 +190,7 @@
                 <div class="user" data-aos="fade-down"
                 data-aos-easing="linear"
                 data-aos-duration="500">
-                    <a href="#"> <img src="./Imagen/equi4.jpg"  alt="yoga2"></a>
+                    <a href="./Pages/psico4.html"> <img src="./Imagen/equi4.jpg"  alt="yoga2"></a>
                     <h3> Estefania Marin</h3>
                     <h4> Psicóloga </h4>
                 </div>
@@ -246,26 +246,30 @@
         </div>
     </section>
 
-        <h1>Formulario de contacto</h1>
-            <form name="contact" method="POST" data-netlify="true">
-                <p>
-                <label>Your Name: <input type="text" name="name" /></label>
-                </p>
-                <p>
-                <label>Your Email: <input type="email" name="email" /></label>
-                </p>
-                <p>
-                <label>Your Role: <select name="role[]" multiple>
-                    <option value="leader">Leader</option>
-                    <option value="follower">Follower</option>
-                </select></label>
-                </p>
-                <p>
-                <label>Message: <textarea name="message"></textarea></label>
-                </p>
-                <p>
-                <button type="submit">Send</button>
-                </p>
+    <section class="formulario" id="formulario">
+        <h2>Contacto </h2>
+
+        <div class="fila">
+            <form name="contact" method="POST" data-netlify="true" >
+                <a>
+                <label> <p> Nombre </p>  <input type="text" name="name" /></label>
+                </a>
+                <a>
+                <label> <p>Correo electronico </p><input type="email" name="email" /></label>
+                </a>
+                <a>
+                    <label> <p> Telefono</p> <input type="text" name="number" /></label>
+                </a>
+                <a>
+                <label> <p> Mensaje</p> <textarea name="message"  cols="30" rows="12" ></textarea></label>
+                </a>
+                <div data-netlify-recaptcha="true"></div>
+                <a>
+                <button type="submit">Enviar</button>
+                </a>
+        </div>
+    </section>
+
             </form>
         
     <footer class="pie-pagina" id="footer">
