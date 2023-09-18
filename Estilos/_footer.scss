@@ -87,6 +87,14 @@ footer{
             display: grid;
             grid-template-columns: repeat(4, 3fr); 
             margin: 10px 20px;
+
+            ul{
+                li{
+                    a{
+                        font-size: 16px;
+                    }
+                }
+            }
         }
 
         .grupo-2{

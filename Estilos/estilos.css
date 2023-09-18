@@ -558,21 +558,22 @@ body.dark .slider .swiper-pagination-bullet-active {
   height: 100%;
 }
 
-.text {
+.text2 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  padding: 12px 0px;
   color: rgb(8, 36, 68);
+  display: grid;
+  grid-template-columns: repeat(3, 6fr);
+  margin: 20px 0px 35px;
+  padding: 0px 12px;
 }
-body.dark .text {
+body.dark .text2 {
   color: #fff;
 }
 
-.text2 {
+.text {
   display: none;
 }
 
@@ -581,7 +582,7 @@ body.dark .text {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px 0px;
+  margin: 0 auto;
 }
 .consultas .turno {
   width: 250px;
@@ -641,7 +642,7 @@ body.dark .cartas .container .cards .card {
   border: 2px solid #f1f0f0;
 }
 .cartas .container .cards .card img {
-  width: 250px;
+  max-width: 350px;
   padding: 20px 35px;
 }
 .cartas .container .cards .card h3 {
@@ -804,14 +805,11 @@ body.dark .ubicacion h2 {
   .contenedor img {
     display: none;
   }
-  .text {
-    display: none;
-  }
   .text2 {
-    display: grid;
-    grid-template-columns: repeat(5, 3fr);
-    gap: 30px;
-    margin: 3rem 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px 0px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 1.7rem;
     font-weight: 700;
@@ -819,7 +817,7 @@ body.dark .ubicacion h2 {
     color: rgb(8, 36, 68);
   }
   .consultas {
-    margin: 120px 0px;
+    margin: 90px 0px;
   }
   .cartas h2 {
     text-align: center;
@@ -859,7 +857,7 @@ body.dark .ubicacion h2 {
   }
   .somos .container .fila .user {
     margin: 0 auto;
-    padding: 25px 50px;
+    padding: 25px 60px;
   }
   .somos .container .fila .user img {
     max-width: 240px;
@@ -887,10 +885,10 @@ body.dark .ubicacion h2 {
   }
   .staff .container .fila .user {
     margin: 0 auto;
-    padding: 30px 50px;
+    padding: 30px 60px;
   }
   .staff .container .fila .user img {
-    max-width: 240px;
+    max-width: 220px;
   }
   .staff .container .fila .user h3 {
     font-size: 20px;
@@ -985,6 +983,9 @@ body.dark .grupo-2 {
     display: grid;
     grid-template-columns: repeat(4, 3fr);
     margin: 10px 20px;
+  }
+  .pie-pagina .grupo-1 ul li a {
+    font-size: 16px;
   }
   .grupo-2 {
     text-align: left;
