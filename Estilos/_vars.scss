@@ -12,10 +12,10 @@
         @mixin H2a {
                 text-align: center;
                 margin: 50px 0px 35px 0px;
-                font-size: 1.8rem;
+                font-size: 2rem;
                 font-family: 'Lato', sans-serif;
                 color: #084c87;
-                font-weight: bold;
+                font-weight: 900;
         }
 
         @mixin h2a {
@@ -24,15 +24,15 @@
                 font-size: 2.2rem;
                 font-family: 'Lato', sans-serif;
                 color: #084c87;
-                font-weight: bold;
+                font-weight: 900;
         } /* titulo responsive */
 
         @mixin H2b {
                 ttext-align: center;
                 margin: 50px 0px 35px 0px;
-                font-size: 1.8rem;
+                font-size: 2rem;
                 font-family: 'Lato', sans-serif;
-                font-weight: 800;
+                font-weight: 900;
                 color: #fff;
                 
         }
@@ -42,7 +42,7 @@
                 margin: 50px 0px 35px 0px;
                 font-size: 2.2rem;
                 font-family: 'Lato', sans-serif;
-                font-weight: 800;
+                font-weight: 900;
                 color: #fff;
                 
         } /* titulo responsive */

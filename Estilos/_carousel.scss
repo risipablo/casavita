@@ -79,23 +79,54 @@
     .swiper-3d .swiper-slide-shadow-right {
         background-image: none;
     }
-    
-    
+
+    .swiper-button-prev,
+        .swiper-button-next{
+            display: none;
+        }
 }
 
 @media only screen and (min-width:800px) {
 
     .slider{
-        min-height: 180vh;
-        max-width: 90vw;
+        min-height: 120vh;
         margin: 0 auto;
-        padding: 12px;
+        padding: 12px 0px;
         .swiper {
-            width: 100%;
+            width: 80%;
         }
         .swiper-slide {
-            height: 600px;
+            height: 450px;
         }
+
+            
+    
+        .swiper-button-prev,
+        .swiper-button-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+
+        .swiper-button-prev:hover,
+        .swiper-button-next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #f3f2f2;
+        }
+
+        .swiper-button-prev::before,
+        .swiper-button-next::before {
+        display: none;
+        }
+
     }
 
 }

@@ -96,7 +96,7 @@
         margin: 90px 0px 0px 0px;
         font-family: 'Montserrat', sans-serif;
 
-        h2{
+        h1{
             @include H2a;
             body.dark & {
                 color: $h2a;
@@ -150,7 +150,7 @@
 
         }
 
-        h2{
+        h1{
             @include H2a;
             
             body.dark & {
@@ -217,7 +217,7 @@
             background-color: $dark;
         }
 
-        h2{
+        h1{
             @include H2b;
             
             body.dark & {
@@ -275,7 +275,7 @@
         padding: 90px 0px 0px 0px;
         padding: 12px;
 
-        h2{
+        h1{
             @include H2a;
 
             body.dark & {
@@ -291,8 +291,7 @@
         padding: 12px;
         margin: 90px 0px 0px 0px;
         font-family: 'Montserrat', sans-serif;
-
-        h2{
+        h1{
             @include H2a;
 
             body.dark & {
@@ -304,6 +303,7 @@
             display: flex;
             justify-content: center;
             margin: 30px 0px 0px;
+            
 
             a{
                 font-size: 16px;
@@ -315,7 +315,7 @@
                 
                     input,
                     textarea{
-                        display:block;
+                        display:flex;
                         text-align: center;
                         width: 100%;
                         padding: 12px 0px;
@@ -323,12 +323,20 @@
                         border:none;
                         font-size: 12px;
                         border-radius: 20px;
-                        background-color: #d3d1d1;
+                        border: 1px solid #c7c2c2;
+                        background-color: #e4e3e3;
                     }
+
+                    .captcha{
+                        margin: 9px 0px;
+                    }
+                    
                     button{
+                        font-size: 1rem;
                         display: block;
                         margin: auto;
                         cursor: pointer;
+                        width: 100%;
                         background-color: rgb(8, 36, 68);
                         color: #f1f0f0;
                         border: none;
@@ -394,7 +402,7 @@
                         flex-wrap: wrap;
                         flex-direction: row;
                         justify-content: center;
-                        margin:0px 20px;
+                        margin:0px 30px;
                         gap: 40px 20px;
                         .card{
                             img {
@@ -475,6 +483,14 @@
                 iframe{
                     height: 350px;
                 }
+            }
+        }
+
+        .formulario{
+            .fila{
+                display: block;
+                width: 60%;
+                margin: 0 auto;
             }
         }
     }

@@ -34,7 +34,7 @@ body.dark .perfil .usuario img {
 }
 .perfil .usuario h3 {
   font-size: 18px;
-  margin: 6px 0px 0px;
+  margin: 6px 0px 20px;
 }
 .perfil .texto {
   font-family: "Montserrat", sans-serif;
@@ -43,6 +43,10 @@ body.dark .perfil .usuario img {
 }
 body.dark .perfil .texto {
   background-color: #161b22;
+}
+.perfil .texto .espe {
+  font-size: 18px;
+  margin: 0px 8px 8px;
 }
 .perfil .texto ul {
   font-size: 18px;
@@ -96,6 +100,10 @@ body.dark .perfil2 .usuario2 img {
 }
 body.dark .perfil2 .texto2 {
   background-color: #161b22;
+}
+.perfil2 .texto2 .espe {
+  font-size: 18px;
+  margin: 0px 8px 8px;
 }
 .perfil2 .texto2 ul {
   font-size: 18px;
@@ -304,7 +312,7 @@ body.dark aside {
 
 aside ul {
   list-style: none;
-  margin: 30px 0px;
+  margin: 35px 0px;
   padding: 20px 6px;
   display: block;
 }
@@ -341,6 +349,7 @@ aside li a:hover {
   background-color: #272e3c;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  transition: 0.9s;
 }
 body.dark .submenu-content {
   background-color: #040911;
@@ -358,15 +367,15 @@ body.dark .submenu-content {
 /* modo oscuro */
 .oscuro {
   cursor: pointer;
-  margin: 0 auto;
+  margin: 20px 6px;
   position: relative;
   display: flex;
   border-radius: 1000px;
   background-color: none;
-  border: 2px solid #c1c1c2;
+  border: none;
   box-shadow: #c1c1c2;
   outline: none;
-  width: 72px;
+  width: 70px;
 }
 .oscuro::after {
   content: "";
@@ -389,7 +398,7 @@ body.dark .submenu-content {
   left: unset;
 }
 .oscuro span {
-  width: 35px;
+  width: 40px;
   height: 25px;
   display: block;
   background: none;
@@ -442,7 +451,7 @@ body.dark .submenu-content {
     border-bottom: 2px solid;
   }
   .oscuro {
-    display: none;
+    left: 120px;
   }
   .submenu-content {
     display: none;
@@ -454,6 +463,7 @@ body.dark .submenu-content {
   }
   .submenu-content li {
     display: block;
+    margin: 0 auto;
   }
 }
 /*CAROUSEL */
@@ -518,19 +528,45 @@ body.dark .slider .swiper-pagination-bullet-active {
 .slider .swiper-3d .swiper-slide-shadow-right {
   background-image: none;
 }
+.slider .swiper-button-prev,
+.slider .swiper-button-next {
+  display: none;
+}
 
 @media only screen and (min-width: 800px) {
   .slider {
-    min-height: 180vh;
-    max-width: 90vw;
+    min-height: 120vh;
     margin: 0 auto;
-    padding: 12px;
+    padding: 12px 0px;
   }
   .slider .swiper {
-    width: 100%;
+    width: 80%;
   }
   .slider .swiper-slide {
-    height: 600px;
+    height: 450px;
+  }
+  .slider .swiper-button-prev,
+  .slider .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  .slider .swiper-button-prev:hover,
+  .slider .swiper-button-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #f3f2f2;
+  }
+  .slider .swiper-button-prev::before,
+  .slider .swiper-button-next::before {
+    display: none;
   }
 }
 /* INDEX*/
@@ -614,15 +650,15 @@ body.dark .text2 {
   margin: 90px 0px 0px 0px;
   font-family: "Montserrat", sans-serif;
 }
-.cartas h2 {
+.cartas h1 {
   text-align: center;
   margin: 50px 0px 35px 0px;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: "Lato", sans-serif;
   color: #084c87;
-  font-weight: bold;
+  font-weight: 900;
 }
-body.dark .cartas h2 {
+body.dark .cartas h1 {
   color: rgb(88, 166, 255);
 }
 .cartas .container {
@@ -665,15 +701,15 @@ body.dark .cartas .container .cards .card h3 {
 body.dark .somos {
   background-color: #161b22;
 }
-.somos h2 {
+.somos h1 {
   text-align: center;
   margin: 50px 0px 35px 0px;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: "Lato", sans-serif;
   color: #084c87;
-  font-weight: bold;
+  font-weight: 900;
 }
-body.dark .somos h2 {
+body.dark .somos h1 {
   color: rgb(88, 166, 255);
 }
 .somos .container {
@@ -726,15 +762,15 @@ body.dark .somos .container .fila .user h4 {
 body.dark .staff {
   background-color: #161b22;
 }
-.staff h2 {
+.staff h1 {
   ttext-align: center;
   margin: 50px 0px 35px 0px;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: "Lato", sans-serif;
-  font-weight: 800;
+  font-weight: 900;
   color: #fff;
 }
-body.dark .staff h2 {
+body.dark .staff h1 {
   color: rgb(88, 166, 255);
   background-color: #161b22;
 }
@@ -781,15 +817,15 @@ body.dark .staff .container .fila .user h4 {
   padding: 90px 0px 0px 0px;
   padding: 12px;
 }
-.ubicacion h2 {
+.ubicacion h1 {
   text-align: center;
   margin: 50px 0px 35px 0px;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: "Lato", sans-serif;
   color: #084c87;
-  font-weight: bold;
+  font-weight: 900;
 }
-body.dark .ubicacion h2 {
+body.dark .ubicacion h1 {
   color: rgb(88, 166, 255);
 }
 
@@ -800,15 +836,15 @@ body.dark .ubicacion h2 {
   margin: 90px 0px 0px 0px;
   font-family: "Montserrat", sans-serif;
 }
-.formulario h2 {
+.formulario h1 {
   text-align: center;
   margin: 50px 0px 35px 0px;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: "Lato", sans-serif;
   color: #084c87;
-  font-weight: bold;
+  font-weight: 900;
 }
-body.dark .formulario h2 {
+body.dark .formulario h1 {
   color: rgb(88, 166, 255);
 }
 .formulario .fila {
@@ -825,7 +861,7 @@ body.dark .formulario .fila a {
 }
 .formulario .fila a input,
 .formulario .fila a textarea {
-  display: block;
+  display: flex;
   text-align: center;
   width: 100%;
   padding: 12px 0px;
@@ -833,12 +869,18 @@ body.dark .formulario .fila a {
   border: none;
   font-size: 12px;
   border-radius: 20px;
-  background-color: #d3d1d1;
+  border: 1px solid #c7c2c2;
+  background-color: #e4e3e3;
+}
+.formulario .fila a .captcha {
+  margin: 9px 0px;
 }
 .formulario .fila a button {
+  font-size: 1rem;
   display: block;
   margin: auto;
   cursor: pointer;
+  width: 100%;
   background-color: rgb(8, 36, 68);
   color: #f1f0f0;
   border: none;
@@ -884,7 +926,7 @@ body.dark .formulario .fila a {
     font-size: 2.2rem;
     font-family: "Lato", sans-serif;
     color: #084c87;
-    font-weight: bold;
+    font-weight: 900;
   }
   .cartas .container {
     padding: 0px;
@@ -894,7 +936,7 @@ body.dark .formulario .fila a {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    margin: 0px 20px;
+    margin: 0px 30px;
     gap: 40px 20px;
   }
   .cartas .container .cards .card img {
@@ -907,7 +949,7 @@ body.dark .formulario .fila a {
     font-size: 2.2rem;
     font-family: "Lato", sans-serif;
     color: #084c87;
-    font-weight: bold;
+    font-weight: 900;
   }
   .somos .container .fila {
     display: flex;
@@ -934,7 +976,7 @@ body.dark .formulario .fila a {
     margin: 50px 0px 35px 0px;
     font-size: 2.2rem;
     font-family: "Lato", sans-serif;
-    font-weight: 800;
+    font-weight: 900;
     color: #fff;
   }
   .staff .container .fila {
@@ -961,6 +1003,11 @@ body.dark .formulario .fila a {
   }
   .ubicacion .maps iframe {
     height: 350px;
+  }
+  .formulario .fila {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
   }
 }
 /* FOOTER */

@@ -35,7 +35,7 @@
         }
         h3{
             font-size: 18px;
-            margin: 6px 0px 0px;
+            margin: 6px 0px 20px;
             
         }
         
@@ -43,10 +43,14 @@
     .texto{
         font-family: 'Montserrat', sans-serif;
         display: block;
-        
         transition: background-color 0.3s, color 0.3s;
         body.dark & {
             background-color: $dark;
+        }
+
+        .espe{
+            font-size: 18px;
+            margin: 0px 8px 8px;
         }
     
         ul{
@@ -112,6 +116,11 @@
         transition: background-color 0.3s, color 0.3s;
         body.dark & {
             background-color: $dark;
+        }
+
+        .espe{
+            font-size: 18px;
+            margin: 0px 8px 8px;
         }
     
         ul{
