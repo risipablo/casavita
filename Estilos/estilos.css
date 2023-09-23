@@ -1075,8 +1075,9 @@ body.dark .grupo-2 {
   z-index: 80;
 }
 .btn-wsp i {
-  font-size: 1.2em;
-  padding: 2px 10px;
+  font-size: 1.4em;
+  padding: 8px 10px;
+  position: static;
 }
 .btn-wsp:hover {
   text-decoration: none;

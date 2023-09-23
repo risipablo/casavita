@@ -68,8 +68,9 @@ footer{
     z-index: 80;
 
     i{
-        font-size: 1.2em;
-        padding: 2px 10px;
+        font-size: 1.4em;
+        padding: 8px 10px;
+        position: static;
     }
 
     &:hover{
