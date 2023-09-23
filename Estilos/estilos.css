@@ -878,14 +878,14 @@ body.dark .formulario .fila a {
   background-color: #e4e3e3;
 }
 .formulario .fila a .captcha {
-  margin: 9px 0px;
+  margin: 12px 0px;
 }
 .formulario .fila a button {
   font-size: 1rem;
   display: block;
   margin: auto;
   cursor: pointer;
-  width: 100%;
+  width: 80%;
   background-color: rgb(8, 36, 68);
   color: #f1f0f0;
   border: none;
@@ -1076,8 +1076,7 @@ body.dark .grupo-2 {
 }
 .btn-wsp i {
   font-size: 1.4em;
-  padding: 8px 10px;
-  position: static;
+  padding: 8px 4px;
 }
 .btn-wsp:hover {
   text-decoration: none;
