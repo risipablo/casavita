@@ -867,7 +867,7 @@ body.dark .formulario .fila a {
   padding: 12px 0px;
   margin: 25px 0px;
   border: none;
-  font-size: 18px;
+  font-size: 12px;
   border-radius: 20px;
   border: 1px solid #c7c2c2;
   background-color: #e4e3e3;
@@ -1105,6 +1105,8 @@ body {
   scroll-behavior: smooth;
   width: 100%;
   transition: background-color 0.3s, color 0.3s;
+  padding: 0px;
+  margin: 0px;
 }
 body.dark {
   background-color: #161b22;

@@ -32,6 +32,8 @@
         scroll-behavior:smooth;
         width: 100%;
         transition: background-color 0.3s, color 0.3s;
+        padding: 0px;
+        margin:0px;
         &.dark{
             background-color: $dark;
         }
