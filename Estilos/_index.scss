@@ -26,15 +26,6 @@
                     display: none;
                 }
             }
-            /* img:nth-child(2) {
-                position: absolute;
-                align-items: center;
-                top: 50px;
-                left: 0;
-                z-index: 1;
-                width: 100%;
-                height: auto; 
-            }*/
         }
 
         .text2{
@@ -49,7 +40,6 @@
             padding: 0px 12px;
             body.dark & {
                 color: #fff;
-            
             }
         }
 
@@ -68,7 +58,6 @@
         .turno{
             width: 250px;   
             height: 45px;
-
             animation: tp-rotate 2.0s infinite linear;
             border-radius: 12px 12px;
             background-color: rgb(8, 36, 68);
@@ -111,7 +100,7 @@
         }
 
         .container{
-            padding: 6px 12px;
+            padding: 6px 18px;
             justify-content: center;
 
             .cards{
@@ -127,7 +116,7 @@
 
                     img {
                         max-width: 400px;
-                        padding: 20px;       
+                        padding: 25px;       
                     }
 
                     h3 {
@@ -328,11 +317,13 @@
                         padding: 12px 0px;
                         margin: 25px 0px;
                         border:none;
-                        font-size: 12px;
+                        font-size: 18px;
                         border-radius: 20px;
                         border: 1px solid #c7c2c2;
                         background-color: #e4e3e3;
+                        
                     }
+
 
                     .captcha{
                         margin: 12px 0px;
@@ -376,7 +367,7 @@
                 .img2{
                     img{
                         display: flex;
-                        
+                        height: 80vh;
                         width: 100%;
                     }
                 }
@@ -397,6 +388,7 @@
 
             .consultas{
                 margin: 90px 0px;
+                
             }
 
             .cartas{

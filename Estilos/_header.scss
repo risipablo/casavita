@@ -154,6 +154,10 @@ body.open aside {
     right: 0; 
 }
 
+aside li.active{
+    color: chocolate;
+}
+
 aside li {
     text-decoration: none;
     font-weight: normal;
@@ -174,7 +178,10 @@ aside li {
         a:hover{
         color: #d6b007;
         }
+     
+        
 }
+
 
 
 /* submenu estilos*/
@@ -315,6 +322,9 @@ aside li {
             color: #d6b007;
             border-bottom: 2px solid ;
             }
+
+
+
     }
 
     .oscuro{

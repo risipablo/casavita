@@ -60,24 +60,21 @@ footer{
     bottom: 30px;
     right: 25px;
     background-color:#0dc310e8;
-    color: rgb(255, 255, 255);
+    
     border-radius: 30px;
     text-align: center;
     font-size: 25px;
     box-shadow: 0px 1px 6px rgb(0,0,0,3);
     z-index: 80;
 
-    i{
+    .icon{
         font-size: 1.4em;
-        padding: 8px 4px;
-        
     }
 
     &:hover{
         text-decoration: none;
         transition: .9s;
         background-color: white;
-        color:#0dc310e8;
         }
         
 }

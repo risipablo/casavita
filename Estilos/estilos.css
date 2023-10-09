@@ -321,6 +321,10 @@ body.open aside {
   right: 0;
 }
 
+aside li.active {
+  color: chocolate;
+}
+
 aside li {
   text-decoration: none;
   font-weight: normal;
@@ -581,15 +585,6 @@ body.dark .slider .swiper-pagination-bullet-active {
   position: relative;
   flex-direction: column;
   padding: 80px 0px 20px;
-  /* img:nth-child(2) {
-      position: absolute;
-      align-items: center;
-      top: 50px;
-      left: 0;
-      z-index: 1;
-      width: 100%;
-      height: auto; 
-  }*/
 }
 .contenedor img {
   width: 100%;
@@ -658,7 +653,7 @@ body.dark .text2 {
 .cartas h1 {
   text-align: center;
   margin: 50px 0px 35px 0px;
-  font-size: 1.8rem;
+  font-size: 38px;
   font-family: "Lato", sans-serif;
   color: #084c87;
   font-weight: 900;
@@ -667,7 +662,7 @@ body.dark .cartas h1 {
   color: rgb(88, 166, 255);
 }
 .cartas .container {
-  padding: 6px 12px;
+  padding: 6px 18px;
   justify-content: center;
 }
 .cartas .container .cards {
@@ -684,7 +679,7 @@ body.dark .cartas .container .cards .card {
 }
 .cartas .container .cards .card img {
   max-width: 400px;
-  padding: 20px;
+  padding: 25px;
 }
 .cartas .container .cards .card h3 {
   font-size: 20px;
@@ -709,7 +704,7 @@ body.dark .somos {
 .somos h1 {
   text-align: center;
   margin: 50px 0px 35px 0px;
-  font-size: 1.8rem;
+  font-size: 38px;
   font-family: "Lato", sans-serif;
   color: #084c87;
   font-weight: 900;
@@ -770,7 +765,7 @@ body.dark .staff {
 .staff h1 {
   ttext-align: center;
   margin: 50px 0px 35px 0px;
-  font-size: 1.8rem;
+  font-size: 38px;
   font-family: "Lato", sans-serif;
   font-weight: 900;
   color: #fff;
@@ -825,7 +820,7 @@ body.dark .staff .container .fila .user h4 {
 .ubicacion h1 {
   text-align: center;
   margin: 50px 0px 35px 0px;
-  font-size: 1.8rem;
+  font-size: 38px;
   font-family: "Lato", sans-serif;
   color: #084c87;
   font-weight: 900;
@@ -844,7 +839,7 @@ body.dark .ubicacion h1 {
 .formulario h1 {
   text-align: center;
   margin: 50px 0px 35px 0px;
-  font-size: 1.8rem;
+  font-size: 38px;
   font-family: "Lato", sans-serif;
   color: #084c87;
   font-weight: 900;
@@ -872,7 +867,7 @@ body.dark .formulario .fila a {
   padding: 12px 0px;
   margin: 25px 0px;
   border: none;
-  font-size: 12px;
+  font-size: 18px;
   border-radius: 20px;
   border: 1px solid #c7c2c2;
   background-color: #e4e3e3;
@@ -905,6 +900,7 @@ body.dark .formulario .fila a {
   }
   .contenedor .img2 img {
     display: flex;
+    height: 80vh;
     width: 100%;
   }
   .text2 {
@@ -924,7 +920,7 @@ body.dark .formulario .fila a {
   .cartas h2 {
     text-align: center;
     margin: 50px 0px 35px 0px;
-    font-size: 2rem;
+    font-size: 38px;
     font-family: "Lato", sans-serif;
     color: #084c87;
     font-weight: 900;
@@ -947,7 +943,7 @@ body.dark .formulario .fila a {
   .somos h2 {
     text-align: center;
     margin: 50px 0px 35px 0px;
-    font-size: 2rem;
+    font-size: 38px;
     font-family: "Lato", sans-serif;
     color: #084c87;
     font-weight: 900;
@@ -975,7 +971,7 @@ body.dark .formulario .fila a {
   .staff h2 {
     ttext-align: center;
     margin: 50px 0px 35px 0px;
-    font-size: 2rem;
+    font-size: 38px;
     font-family: "Lato", sans-serif;
     font-weight: 900;
     color: #fff;
@@ -1067,22 +1063,19 @@ body.dark .grupo-2 {
   bottom: 30px;
   right: 25px;
   background-color: rgba(13, 195, 16, 0.9098039216);
-  color: rgb(255, 255, 255);
   border-radius: 30px;
   text-align: center;
   font-size: 25px;
   box-shadow: 0px 1px 6px rgb(0, 0, 0);
   z-index: 80;
 }
-.btn-wsp i {
+.btn-wsp .icon {
   font-size: 1.4em;
-  padding: 8px 4px;
 }
 .btn-wsp:hover {
   text-decoration: none;
   transition: 0.9s;
   background-color: white;
-  color: rgba(13, 195, 16, 0.9098039216);
 }
 
 @media only screen and (min-width: 800px) {
